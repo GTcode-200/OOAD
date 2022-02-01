@@ -20,14 +20,20 @@ public class Inheritance
         System.out.println("Child obj info");
         cobj.showk();
         cobj.sum();
-        cobj.showij();//same o/p
+        cobj.showij();//same o/p as pobj.showij()
+
+        System.out.println(A.p);//100
+        System.out.println(B.p);//100
+        B.p=200;//value changed in parent also
+        System.out.println("value of A after b.p=200 "+A.p);//200
+
     }
 }
 
 class A
 {
     int i,j;//if they are made private then it can't be accessed in child class
-
+    static int p=100;
     void showij()
     {
         System.out.println("i an j="+i+" "+j);
