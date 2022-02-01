@@ -3,6 +3,7 @@ public class Findarea {
         //shape s = new shape(0,0);//objects cant be instantiated for abstract classes
         rect r = new rect(2,3);
         triangle t = new triangle(3,4);
+        System.out.println(r);//rect@1f32e575-hashcode is printed if tostring is not overridden
 
         //s.calcarea();
         r.calcarea();
@@ -12,6 +13,7 @@ public class Findarea {
 }
 //Abstract methods have no body
 //Abstract class can also have concrete methods
+//Ctt and static methods cant be made abstract
 abstract class shape //if atleast one abstract method declare class abstract
 {
     int d1;
@@ -46,6 +48,8 @@ class rect extends shape
     {
         System.out.println("Area of rectangle= "+(d1*d2));
     }
+
+    //override toString
 }
 
 class triangle extends shape
