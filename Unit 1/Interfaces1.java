@@ -30,7 +30,7 @@ class pen extends demo implements writeableobj,readableobj  //multiple inheritan
         System.out.println("I am pen");
     }
 
-    public void read()//it is must ti implement else error
+    public void read()//it is must to implement else error
     {
         System.out.println("You are reading");
     }
